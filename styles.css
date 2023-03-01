@@ -79,6 +79,7 @@
 
 .bordered-container {
     background-color: aliceblue;
+    padding: 20px 0px;
 }
 
 .bordered-container > div {
@@ -88,7 +89,7 @@
     background-color: rgb(46, 80, 180);
     width: 150px;
     height: 150px;
-    margin: 0px auto;
+    margin: 20px auto;
     border-radius: 100%;
 }
 
@@ -137,4 +138,68 @@ header > div > nav > a{
 header > div > nav > a:hover{
     background-color: #f0f0f0;
     font-weight: bold;
+}
+
+.grid > * {
+    padding: 10px;
+    border: 1px solid;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    background-color: #909090;
+    font-size: 2.5rem;
+}
+
+.grid {
+    display: grid;
+    height: 600px;
+    background-color: rgb(175, 175, 175);
+    grid-template-areas: 
+    'header header header'
+    'menu main aside'
+    'menu footer footer';
+    grid-template-columns: 15vw 4fr 1fr;
+    grid-template-rows: 20% 30vh 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+
+.grid > header {
+    box-shadow: none;
+    grid-area: header;
+    background-color: rgb(255, 255, 255);
+}
+
+.grid > nav {
+    display: flex;
+    background-image: url("/images/cloud.jpg");
+    background-size:cover;
+    grid-area: menu;
+    background-color: rgb(222, 222, 222);
+    justify-content: center;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.grid > main {
+    display: flex;
+    grid-area: main;
+    background-image: url("/images/mountains.jpg");
+    background-size:cover;
+    background-position: 50% 3%;
+    justify-content: center;
+    align-items: center;
+    font-size: 4.5rem;
+    font-weight: 500;
+    color: white;
+}
+
+.grid > aside {
+    grid-area: aside;
+}
+
+.grid > footer {
+    grid-area: footer;
+    background-color: #6e6e6e;
 }
