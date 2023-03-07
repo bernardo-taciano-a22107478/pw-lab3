@@ -145,6 +145,11 @@ header > div > nav > a:hover{
     border-radius: 10px;
 }
 
+header > div > nav > a:active{
+    color: #8bb6ff;
+}
+
+
 
 
 /* CONTENTOR DE CIRCULOS */
