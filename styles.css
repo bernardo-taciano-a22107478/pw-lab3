@@ -292,6 +292,8 @@ header > div > nav > a:hover{
     padding: 20px;
     flex-direction: column;
     margin: 20px auto;
+    border-radius: 20px;
+    box-shadow: 2px 4px 6px #888888;
 }
 
 .hidden-container i{
